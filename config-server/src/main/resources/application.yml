@@ -1,0 +1,20 @@
+# Clnicare config server .yml file
+---
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/beogotech/clincare/config-repo
+        native:
+          search-locations: classpath:/config
+  profiles:
+    active: dev,native
+
+server:
+  port: 8888
+
+
+security:
+  user:
+    password: 12345

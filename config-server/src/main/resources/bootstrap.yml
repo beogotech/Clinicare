@@ -1,0 +1,9 @@
+---
+# config server bootstrap file
+
+spring:
+  application:
+    name: config-service
+
+  profiles:
+    active: native,dev

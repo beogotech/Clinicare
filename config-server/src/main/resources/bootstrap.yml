@@ -1,0 +1,16 @@
+---
+# config server bootstrap file
+
+spring:
+  application:
+    name: config-service
+
+  profiles:
+    active: native,dev
+
+eureka:
+  instance:
+    nonSecurePort: ${server.port:8888}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/

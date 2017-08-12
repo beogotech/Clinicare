@@ -1,0 +1,9 @@
+---
+# Discovery service bootstrap file
+spring:
+  application:
+    name: registry
+
+security:
+  user:
+    password: 12345

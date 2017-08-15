@@ -2,7 +2,7 @@
 # Discovery service bootstrap file
 spring:
   application:
-    name: registry
+    name: registry-service
 
 security:
   user:

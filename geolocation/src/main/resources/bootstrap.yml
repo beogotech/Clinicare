@@ -1,0 +1,10 @@
+---
+# Geolocation config file
+spring:
+  application:
+    name: geolocation-service
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        enabled: true
